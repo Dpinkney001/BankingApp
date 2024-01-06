@@ -3,20 +3,18 @@ import "CheckingAccountInterface.kt";
 
 class CheckingAccount {
     public CheckingAccount()
-    private fun addMoney(function: () -> Int) {
-        println("How much do you want to add?");
-        readln(addMoney())
-
-    }
-
     {
-        CheckingAccount(){};
-        Double balance;
+        Double balance = 0.0;
+        Double amount = 0.0;
+        Double withdrawlAmount = 0.0;
 
-        addMoney(){
-            ;
+        private void fun addMoney(function: () -> Int) {
+            println("How much do you want to add?");
+            readln(addMoney(Int : amount))
+
         };
-        debitMoney();
+        private void fun debitMoney(Int : withdrawAmount ) {
 
+        };
     }
-}
+};
