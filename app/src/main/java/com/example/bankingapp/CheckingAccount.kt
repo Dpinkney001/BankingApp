@@ -2,19 +2,26 @@ package com.example.bankingapp
 import "CheckingAccountInterface.kt";
 
 class CheckingAccount {
-    public CheckingAccount()
+    private Double var balance;
+    private Double var amount;
+    private Double var withdrawlAmount;
+
+    public fun CheckingAccount()
     {
-        Double balance = 0.0;
-        Double amount = 0.0;
-        Double withdrawlAmount = 0.0;
 
-        private void fun addMoney(function: () -> Int) {
+
+        fun addMoney(amount : Double) {
+            return amount + balance;
+        };
+        fun debitMoney(withdrawAmount : Double ) {
+            return balance - withdrawAmount;
+        };
+
+        fun main(){
+            val acc = new CheckingAccount();
             println("How much do you want to add?");
-            readln(addMoney(Int : amount))
+            amount = readln();
 
-        };
-        private void fun debitMoney(Int : withdrawAmount ) {
-
-        };
+        }
     }
 };
