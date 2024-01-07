@@ -9,14 +9,12 @@ class BankingApp {
 
         var userChoice = 0;
 
-        var userChoice = {
-            Exit = -1;
-            Base = 0;
-            Debit = 1;
-            Credit = 2;
-            Checking = 3; };
+        enum class UserChoice(val choice: Int) {
+            Debit(1),
+            Credit(2),
+            Checking(3) }
 
-        while (userChoice != -1) {
+        while (choice != -1) {
             accountType = " ";
 
             println("Welcome to your banking system.");
@@ -30,6 +28,7 @@ class BankingApp {
 
             switch(accountType) {
                 case -1:
+                   userChoice = -1;
                    break;
                 case 0:
 
